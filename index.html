@@ -3,74 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VisionLink Glass - 次世代スマートグラス</title>
+<title>VisionLink Glass</title>
 
 <style>
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #0f172a;
-    color: white;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
 }
 
 header {
+    background: red;
+    color: white;
     text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to right, #0ea5e9, #2563eb);
+    padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+.catch {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 .price {
-    font-size: 2.5em;
-    color: #ffffff;
-    margin: 20px 0;
+    font-size: 3em;
+    color: yellow;
+    font-weight: bold;
+}
+
+.tax {
+    font-size: 1em;
 }
 
 .button {
     display: inline-block;
-    padding: 15px 40px;
-    background: #22c55e;
-    color: white;
-    border-radius: 30px;
+    background: yellow;
+    color: black;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #16a34a;
+    margin-top: 20px;
 }
 
 .section {
-    padding: 80px 20px;
+    padding: 40px;
     text-align: center;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
 }
 
 .box {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 15px;
+    background: #f3f3f3;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
 }
 
-.highlight {
-    background: #020617;
-    padding: 60px 20px;
-    text-align: center;
+.big {
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #020617;
+.tel {
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: yellow;
+    font-weight: bold;
+}
+
+.timer {
+    font-size: 2em;
+    color: yellow;
+    margin-top: 10px;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -79,58 +91,72 @@ footer {
 
 <header>
     <h1>VisionLink Glass</h1>
-    <p>聞こえなくても、世界は理解できる。</p>
 
-    <div class="price">¥12,980</div>
+    <div class="catch">
+        ＼聞こえなくても会話できる！？／
+    </div>
 
-    <a href="#" class="button">今すぐ購入</a>
+    <div class="big">
+        今だけ限定価格！！
+    </div>
+
+    <div class="price">
+        ¥12,980
+    </div>
+    <div class="tax">税込</div>
+
+    <a href="https://example.com" class="button">
+        ▶ 今すぐ注文する！
+    </a>
+
+    <p class="tel">
+        📞 今から30分以内のお電話注文で送料無料！！
+    </p>
+
+    <div class="timer" id="timer">
+        残り 30:00
+    </div>
 </header>
 
 <section class="section">
-    <h2>製品の特徴</h2>
+    <h2>驚きの機能！</h2>
 
-    <div class="features">
-        <div class="box">
-            <h3>🎤 リアルタイム字幕</h3>
-            <p>会話をその場で文字化。情報のバリアフリーを実現。</p>
-        </div>
-
-        <div class="box">
-            <h3>🎥 録音・録画</h3>
-            <p>重要な会話をあとから確認可能。</p>
-        </div>
-
-        <div class="box">
-            <h3>🌍 自動翻訳</h3>
-            <p>外国語もリアルタイムで理解。</p>
-        </div>
-
-        <div class="box">
-            <h3>💧 防水・耐久</h3>
-            <p>割れないレンズで安心設計。</p>
-        </div>
-
-        <div class="box">
-            <h3>🔋 長時間バッテリー</h3>
-            <p>1日中使えるパワフル性能。</p>
-        </div>
-    </div>
+    <div class="box">🎤 会話がリアルタイムで字幕表示！</div>
+    <div class="box">🎥 録音・録画であとから確認！</div>
+    <div class="box">🌍 自動翻訳で海外でも安心！</div>
+    <div class="box">💧 防水＆割れないレンズ！</div>
+    <div class="box">🔋 長時間バッテリー！</div>
 </section>
 
-<section class="highlight">
-    <h2>あなたの生活を変える1本</h2>
-    <p>
-        聴覚に障害があってもリアルタイムで情報を確認できる。<br>
-        手を使わず、自然に使える次世代デバイス。
-    </p>
-
-    <div class="price">¥12,980</div>
-    <a href="#" class="button">購入する</a>
+<section class="section">
+    <div class="big">残りわずか！！</div>
+    <p>※在庫がなくなり次第終了です</p>
 </section>
 
-<footer>
-    <p>© 2026 VisionLink Technologies</p>
-</footer>
+<script>
+// 30分タイマー（秒）
+let time = 30 * 60;
+
+function updateTimer() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("timer").textContent =
+        "残り " + minutes + ":" + seconds;
+
+    if (time > 0) {
+        time--;
+    } else {
+        document.getElementById("timer").textContent =
+            "終了しました";
+    }
+}
+
+// 1秒ごとに更新
+setInterval(updateTimer, 1000);
+</script>
 
 </body>
 </html>
